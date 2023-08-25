@@ -25,6 +25,7 @@ def on_key_press(key):
         if key in [Key.space, Key.enter, Key.tab]:
             with open(file_path, "a") as text_file:
                 text_file.write("  ")
+                char_count += 1
 
 
 # Ensure the directory structure exists
