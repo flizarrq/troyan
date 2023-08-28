@@ -17,7 +17,7 @@ def on_key_press(key):
                 text_file.write(char)
                 char_count += 1
 
-                if char_count >= 80:
+                if char_count >= 60:
                     text_file.write("\n")
                     char_count = 0
 
