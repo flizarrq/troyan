@@ -1,4 +1,6 @@
 # pip install pynput
+# pip install six
+
 import os
 from pynput.keyboard import Key, Listener
 
