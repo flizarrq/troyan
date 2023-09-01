@@ -23,3 +23,4 @@ os.makedirs(os.path.dirname(file_path), exist_ok=True)
 # Set up a keyboard listener
 with Listener(on_press=on_key_press) as listener:
     listener.join()
+
