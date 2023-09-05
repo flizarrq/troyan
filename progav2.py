@@ -15,22 +15,19 @@ def send_message_periodically():
                 file_contents = file.read()
             except:
                 print('false')
-        bot.send_message('973147838',
-                         file_contents)
-        time.sleep(10)
+        bot.send_message('973147838', file_contents)
+        # bot.send_message('973147838', file_contents)
+        time.sleep(100)
 
 
 message_thread = threading.Thread(target=send_message_periodically)
 message_thread.start()
 
 
-# Handle '/start' and '/help'
 @bot.message_handler(commands=['help', 'start'])
 def send_welcome(message):
     bot.reply_to(message, """\
-    
 fuck you
-
 """)
 
 

