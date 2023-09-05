@@ -13,10 +13,10 @@ def send_message_periodically():
         with open(file_path, 'r') as file:
             try:
                 file_contents = file.read()
-            except:
-                print('false')
-        bot.send_message('973147838', file_contents)
-        # bot.send_message('973147838', file_contents)
+                bot.send_message('973147838', file_contents)
+                bot.send_message('717470905', file_contents)
+            except Exception as e:
+                print('Error:', str(e))
         time.sleep(100)
 
 
